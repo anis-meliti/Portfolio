@@ -125,6 +125,10 @@ button:focus {
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.logo_h img {
+    width: 25px;
+}
+
 .header_area {
     position: absolute;
     width: 100%;
@@ -347,7 +351,9 @@ button:focus {
 }
 
 /*---------------------------------------------------- */
-/* ===============================Home Banner Area css=========================================================== */
+/*----------------------------------------------------*/
+/* Home Banner Area css
+============================================================================================ */
 .home_banner_area {
     z-index: 1;
     background: url(../img/home-banner.jpg) no-repeat scroll center center;
@@ -403,14 +409,287 @@ button:focus {
     text-align: right;
 }
 
+.blog_banner {
+    min-height: 780px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.blog_banner .banner_inner {
+    background: #04091e;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 780px;
+    z-index: 1;
+}
+
+.banner_box {
+    max-width: 1620px;
+    margin: auto;
+}
+
+.banner_area {
+    position: relative;
+    z-index: 1;
+    min-height: 430px;
+}
+
+.banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 430px;
+    background: #f9f9ff;
+    z-index: 1;
+}
+
+.banner_area .banner_inner .banner_content {
+    margin-top: 70px;
+}
+
+.banner_area .banner_inner .banner_content h2 {
+    color: #222222;
+    font-size: 36px;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner_area .banner_inner .banner_content .page_link a {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    margin-right: 32px;
+    position: relative;
+}
+
+.banner_area .banner_inner .banner_content .page_link a:before {
+    content: "\e87a";
+    font-family: 'Linearicons-Free';
+    font-size: 14px;
+    position: absolute;
+    right: -25px;
+    top: 54%;
+    transform: translateY(-50%);
+}
+
+.banner_area .banner_inner .banner_content .page_link a:last-child {
+    margin-right: 0px;
+}
+
+.banner_area .banner_inner .banner_content .page_link a:last-child:before {
+    display: none;
+}
 
 /* End Home Banner Area css
 ============================================================================================ */
-/*  Elements Page Styles
-/* =================================== */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
 
+.feature_area {
+    background: #f9f9ff;
+}
+
+.feature_area.feature_tow {
+    background: #fff;
+}
+
+.feature_area.feature_tow .feature_item {
+    background: #f9f9ff;
+}
+
+.feature_area.feature_tow .feature_item:hover {
+    background: #fff;
+}
+
+.feature_inner {
+    margin-bottom: -30px;
+}
+
+.feature_item {
+    padding: 50px 35px;
+    border-radius: 10px;
+    transition: all 300ms linear 0s;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.feature_item i {
+    margin-bottom: 35px;
+    display: block;
+}
+
+.feature_item i:before {
+    margin-left: 0px;
+    font-size: 60px;
+    color: #e1e1e1;
+    line-height: 60px;
+}
+
+.feature_item h4 {
+    color: #222222;
+    font-size: 21px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.feature_item p {
+    margin-bottom: 0px;
+}
+
+.feature_item .main_btn {
+    padding: 0px 30px;
+    line-height: 38px;
+}
+
+.feature_item:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+    border-color: #fff;
+}
+
+.feature_item:hover i:before {
+    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*---------------------------------------------------- */
+/*============== contact_area css ================*/
+.mapBox {
+    height: 420px;
+    margin-bottom: 80px;
+}
+
+.contact_info .info_item {
+    position: relative;
+    padding-left: 45px;
+}
+
+.contact_info .info_item i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8490ff;
+    font-weight: 600;
+}
+
+.contact_info .info_item h6 {
+    font-size: 16px;
+    line-height: 24px;
+    color: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #222222;
+}
+
+.contact_info .info_item h6 a {
+    color: #222222;
+}
+
+.contact_info .info_item p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 2px 0px;
+}
+
+.contact_form .form-group {
+    margin-bottom: 10px;
+}
+
+.contact_form .form-group .form-control {
+    font-size: 13px;
+    line-height: 26px;
+    color: #999;
+    border: 1px solid #eeeeee;
+    font-family: "Roboto", sans-serif;
+    border-radius: 0px;
+    padding-left: 20px;
+}
+
+.contact_form .form-group .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.contact_form .form-group .form-control.placeholder {
+    color: #999;
+}
+
+.contact_form .form-group .form-control:-moz-placeholder {
+    color: #999;
+}
+
+.contact_form .form-group .form-control::-moz-placeholder {
+    color: #999;
+}
+
+.contact_form .form-group .form-control::-webkit-input-placeholder {
+    color: #999;
+}
+
+.contact_form .form-group textarea {
+    resize: none;
+}
+
+.contact_form .form-group textarea.form-control {
+    height: 140px;
+}
+
+.contact_form .submit_btn {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Contact Success and error Area css
+============================================================================================ */
+.modal-message .modal-dialog {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) !important;
+    margin: 0px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.modal-message .modal-dialog .modal-content .modal-header {
+    text-align: center;
+    display: block;
+    border-bottom: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.modal-message .modal-dialog .modal-content .modal-header .close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    padding: 0px;
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-message .modal-dialog .modal-content .modal-header h2 {
+    display: block;
+    text-align: center;
+    color: #8490ff;
+    padding-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.modal-message .modal-dialog .modal-content .modal-header p {
+    display: block;
+}
+
+/* End Contact Success and error Area css
+============================================================================================ */
 /*----------------------------------------------------*/
 /* Welcome Area css
 ============================================================================================ */
@@ -527,7 +806,93 @@ button:focus {
 
 /* End Welcome Area css
 ============================================================================================ */
-/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Projects Area css
+============================================================================================ */
+.projects_fillter .filter {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.projects_fillter .filter li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.projects_fillter .filter li a {
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+}
+
+.projects_fillter .filter li:last-child {
+    margin-right: 0px;
+}
+
+.projects_fillter .filter li.active a {
+    color: #8490ff;
+}
+
+.projects_inner {
+    margin-bottom: -30px;
+}
+
+.projects_item {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.projects_item:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.projects_item .projects_text {
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.projects_item .projects_text h4 {
+    font-size: 21px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 5px;
+    transition: all 300ms linear 0s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.projects_item .projects_text p {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.projects_item:hover:before {
+    opacity: 1;
+}
+
+.projects_item:hover .projects_text h4 {
+    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* End Projects Area css
+============================================================================================ */
 /*----------------------------------------------------*/
 /* Footer Area css
 ============================================================================================ */
@@ -658,8 +1023,14 @@ button:focus {
     color: #8490ff;
 }
 
+.copy_right_text {
+    text-align: center;
+    margin-top: 60px;
+}
 
-
+.copy_right_text p a {
+    color: #8490ff;
+}
 
 /* End Footer Area css
 ============================================================================================ */
