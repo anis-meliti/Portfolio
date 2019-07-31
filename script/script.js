@@ -1,7 +1,9 @@
-const progressBars = document.querySelectorAll('.progress-bar');
-console.log(progressBars);
-for (let progressBar in progressBars) {
-    progressBar.addEventListener('load', function () {
-        console.log(progressBar);
+window.addEventListener('load', function () {
+
+    let progressBars = document.querySelectorAll(".progress-bar");
+    progressBars.forEach(el => {
+        let width = el.getAttribute('aria-valuenow');
+        el.style.width = width + "%";
     });
-}
+
+});
